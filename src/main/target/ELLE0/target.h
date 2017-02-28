@@ -55,30 +55,38 @@
 #define USE_VCP
 
 /* Telemetry (Overlaps with DMA from motors) */
-//#define USE_UART1
-//#define UART1_RX_PIN            PA10
-//#define UART1_TX_PIN            PA9
-//#define UART1_AHB1_PERIPHERALS  RCC_AHB1Periph_DMA2
+#define USE_UART1
+#define UART1_RX_PIN            PA10
+#define UART1_TX_PIN            PA9
 
 /* RX1 */
 #define USE_UART2
-#define UART2_RX_PIN        PA3
-#define UART2_TX_PIN        PA2
+#define UART2_RX_PIN            PA3
+#define UART2_TX_PIN            PA2
 
 /* I2C */
 #define USE_UART3
 #define UART3_RX_PIN            PB11
 #define UART3_TX_PIN            PB10
 
+/* GPS */
+#define USE_UART4
+#define UART4_RX_PIN            PC11
+#define UART4_TX_PIN            PC10
+
 /* RX2 */
-//#define USE_UART5
-//#define UART5_RX_PIN            PD2
-//#define UART5_TX_PIN            PC12
+/*#define USE_UART5
+#define UART5_RX_PIN            PD2
+#define UART5_TX_PIN            PC12*/
 
 #define USE_SOFTSERIAL1
 #define USE_SOFTSERIAL2
 
-#define SERIAL_PORT_COUNT 5
+#define SERIAL_PORT_COUNT 7
+
+#define USE_ESCSERIAL
+#define ESCSERIAL_TIMER_TX_HARDWARE 1 // PWM 1
+#define USE_ESC_SENSOR
 
 #define USE_SPI
 
@@ -99,6 +107,9 @@
 #define SERIALRX_UART           SERIAL_PORT_USART2
 #define RX_CHANNELS_TAER
 
+#define SPEKTRUM_BIND
+#define BIND_PIN                PA2
+
 #define TARGET_IO_PORTA         0xffff
 #define TARGET_IO_PORTB         0xffff
 #define TARGET_IO_PORTC         0xffff
@@ -106,3 +117,6 @@
 
 #define USABLE_TIMER_CHANNEL_COUNT 9
 #define USED_TIMERS  (TIM_N(2) | TIM_N(4) | TIM_N(5) | TIM_N(8))
+
+#define CMS
+#define USE_MSP_DISPLAYPORT

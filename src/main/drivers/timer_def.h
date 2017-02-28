@@ -387,10 +387,10 @@
 #define DEF_TIM_DMA_CHN_1__TIM8_CH1    DMA_Channel_7
 #define DEF_TIM_DMA_CHN_0__TIM8_CH1N   DMA_Channel_0
 #define DEF_TIM_DMA_CHN_1__TIM8_CH1N   DMA_Channel_7
-#define DEF_TIM_DMA_CHN_0__TIM8_CH2    DMA_Channel_0
-#define DEF_TIM_DMA_CHN_1__TIM8_CH2    DMA_Channel_7
-#define DEF_TIM_DMA_CHN_0__TIM8_CH2N   DMA_Channel_0
-#define DEF_TIM_DMA_CHN_1__TIM8_CH2N   DMA_Channel_7
+#define DEF_TIM_DMA_CHN_0__TIM8_CH2    DMA_Channel_7
+#define DEF_TIM_DMA_CHN_1__TIM8_CH2    DMA_Channel_0
+#define DEF_TIM_DMA_CHN_0__TIM8_CH2N   DMA_Channel_7
+#define DEF_TIM_DMA_CHN_1__TIM8_CH2N   DMA_Channel_0
 #define DEF_TIM_DMA_CHN_0__TIM8_CH3    DMA_Channel_0
 #define DEF_TIM_DMA_CHN_1__TIM8_CH3    DMA_Channel_7
 #define DEF_TIM_DMA_CHN_0__TIM8_CH3N   DMA_Channel_0
